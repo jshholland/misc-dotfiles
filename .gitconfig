@@ -1,0 +1,15 @@
+[user]
+	name = Josh Holland
+	email = josh@inv.alid.pw
+[color]
+	ui = auto
+[alias]
+	st = status
+	ci = commit
+	br = branch
+	co = checkout
+[core]
+[push]
+	default = simple
+[core]
+	excludesfile = /home/jholland/.gitignore

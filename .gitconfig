@@ -13,3 +13,5 @@
 	default = simple
 [core]
 	excludesfile = /home/jholland/.gitignore
+[merge]
+	ff = false

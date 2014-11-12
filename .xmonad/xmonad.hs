@@ -23,16 +23,16 @@ main = do
             updatePointer $ Relative 0.5 0.5
         } `additionalKeysP`
         (
-            -- switch mod-<number> from greedyView to view so that if a workspace
-            -- is currently displayed on another monitor, focus shifts instead of the
-            -- workspaces swapping
+            -- switch mod-<number> from greedyView to view so that if a
+            -- workspace is currently displayed on another monitor, focus
+            -- shifts instead of the workspaces swapping
             [ (extraModMasks ++ "M-" ++ ws, action ws)
               | ws <- take 9 $ map show [1..]
               , (extraModMasks, action) <- [ ("",   windows . W.view)
                                            , ("S-", windows . W.shift)
                                            ]
             ] ++
-            [ ("M-p", spawn $ "dmenu_run -fn 'Source Code Pro:size=11' -nb '#073642' -nf '#839496' " ++
-                              "-sb '#268bd2'")
+            [ ("M-p", spawn $ "dmenu_run -fn 'Source Code Pro:size=11' " ++
+                              "-nb '#073642' -nf '#839496' -sb '#268bd2'")
             ]
         )

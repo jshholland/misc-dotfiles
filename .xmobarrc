@@ -1,0 +1,18 @@
+
+Config { font = "xft:Concourse T7:size=12"
+       , borderColor = "black"
+       , border = TopB
+       , bgColor = "#002b36"
+       , fgColor = "#839496"
+       , position = Top
+       , lowerOnStart = True
+       , pickBroadest = False
+       , persistent = False
+       , hideOnStart = False
+       , commands = [ Run Date "%a %_d %B %R" "date" 10
+                    , Run StdinReader
+                    ]
+       , sepChar = "%"
+       , alignSep = "}{"
+       , template = "%StdinReader% }%date%{"
+       }

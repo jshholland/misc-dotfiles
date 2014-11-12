@@ -18,7 +18,7 @@ main = do
         , logHook     = do
             dynamicLogWithPP xmobarPP
                 { ppOutput = hPutStrLn xmobar
-                , ppTitle  = xmobarColor "green" "" . shorten 100
+                , ppTitle  = xmobarColor "#859900" "#002b36" . shorten 100
                 }
             updatePointer $ Relative 0.5 0.5
         } `additionalKeysP`

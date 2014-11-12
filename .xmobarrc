@@ -2,8 +2,8 @@
 Config { font = "xft:Concourse T7:size=12"
        , borderColor = "black"
        , border = TopB
-       , bgColor = "black"
-       , fgColor = "grey"
+       , bgColor = "#002b36"
+       , fgColor = "#839496"
        , position = Top
        , lowerOnStart = True
        , pickBroadest = False

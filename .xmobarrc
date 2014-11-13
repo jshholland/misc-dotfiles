@@ -1,4 +1,3 @@
-
 Config { font = "xft:Concourse T7:size=12"
        , borderColor = "black"
        , border = TopB
@@ -6,13 +5,12 @@ Config { font = "xft:Concourse T7:size=12"
        , fgColor = "#839496"
        , position = Top
        , lowerOnStart = True
-       , pickBroadest = False
-       , persistent = False
-       , hideOnStart = False
-       , commands = [ Run Date "%a %_d %B %R" "date" 10
+       , commands = [ Run Date "%a %_d %B %R" "date" 30
                     , Run StdinReader
+                    , Run Battery ["-t", "Battery: <left>% (<timeleft>) Usage: <watts>W"] 30
+                    , Run Wireless "wlan0" ["-t", "Wifi: <essid> (<quality>%)"] 30
+                    , Run DynNetwork [] 10
+                    , Run Locks
                     ]
-       , sepChar = "%"
-       , alignSep = "}{"
-       , template = "%StdinReader% }%date%{"
+       , template = "%StdinReader% }%date%{ %locks% § %wlan0wi% %dynnetwork% § %battery%"
        }

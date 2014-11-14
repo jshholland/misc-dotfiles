@@ -6,9 +6,7 @@ function fish_prompt
 		set_color normal
 		echo -n ' '
 	end
-	echo -n (whoami)
-	echo -n '@'
-	echo -n (hostname)
+	echo -n (whoami)@(hostname)
 	echo -n ' '
 	set_color $fish_color_cwd
 	echo -n (prompt_pwd)

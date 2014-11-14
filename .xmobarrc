@@ -10,7 +10,8 @@ Config { font = "xft:Concourse T7:size=12"
                     , Run Battery ["-t", "Battery: <left>% (<timeleft>) Usage: <watts>W"] 30
                     , Run Wireless "wlan0" ["-t", "Wifi: <essid> (<quality>%)"] 30
                     , Run DynNetwork [] 10
+                    , Run Mpris2 "nuvolaplayer" [] 10
                     , Run Locks
                     ]
-       , template = "%StdinReader% }%date%{ %locks% § %wlan0wi% %dynnetwork% § %battery%"
+       , template = "%StdinReader% }%date%{ %locks% § %mpris2% § %wlan0wi% %dynnetwork% § %battery%"
        }

@@ -11,7 +11,7 @@ main = do
     xmobar <- spawnPipe "xmobar"
     xmonad $ defaultConfig
         { modMask     = mod4Mask
-        , terminal    = "urxvt"
+        , terminal    = "sakura"
         , borderWidth = 3
         , manageHook  = manageDocks <+> manageHook defaultConfig
         , layoutHook  = avoidStruts $ layoutHook defaultConfig

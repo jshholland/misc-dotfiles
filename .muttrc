@@ -18,3 +18,5 @@ bind index J sidebar-next
 bind index K sidebar-prev
 bind index F sidebar-open
 bind index G imap-fetch-mail
+
+save-hook . =INBOX.Archives.%<%Y>

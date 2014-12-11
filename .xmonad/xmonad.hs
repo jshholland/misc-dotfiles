@@ -37,5 +37,7 @@ main = do
             , ("<XF86AudioLowerVolume>", spawn "pactl set-sink-volume @DEFAULT_SINK@ -- -2%")
             , ("<XF86AudioRaiseVolume>", spawn "pactl set-sink-volume @DEFAULT_SINK@ -- +2%")
             , ("<XF86AudioMute>", spawn "pactl set-sink-mute @DEFAULT_SINK@ -- toggle")
+            , ("<XF86MonBrightnessDown>", spawn "xbacklight -dec 10")
+            , ("<XF86MonBrightnessUp>", spawn "xbacklight -inc 10")
             ]
         )

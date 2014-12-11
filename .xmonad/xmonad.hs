@@ -34,5 +34,8 @@ main = do
             ] ++
             [ ("M-p", spawn $ "dmenu_run -fn 'Source Code Pro:size=11' " ++
                               "-nb '#073642' -nf '#839496' -sb '#268bd2'")
+            , ("<XF86AudioLowerVolume>", spawn "pactl set-sink-volume @DEFAULT_SINK@ -- -2%")
+            , ("<XF86AudioRaiseVolume>", spawn "pactl set-sink-volume @DEFAULT_SINK@ -- +2%")
+            , ("<XF86AudioMute>", spawn "pactl set-sink-mute @DEFAULT_SINK@ -- toggle")
             ]
         )

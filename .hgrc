@@ -1,0 +1,8 @@
+[ui]
+username = Josh Holland <josh@inv.alid.pw>
+ignore = ~/.hgignore
+[alias]
+dstat = diff --stat
+undo = strip -k .
+[extensions]
+strip =

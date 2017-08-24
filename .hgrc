@@ -9,3 +9,4 @@ hgsubversion = ~/hgsubversion/hgsubversion
 convert =
 purge =
 shelve =
+rebase =

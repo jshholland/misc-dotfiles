@@ -1,4 +1,4 @@
-rofi.font: Anonymous Pro 14
+rofi.font: Fira Mono 12
 rofi.color-normal: #181818, #d8d8d8, #282828, #383838, #d8d8d8
 rofi.color-urgent: #181818, #ab4642, #282828, #ab4642, #d8d8d8
 rofi.color-active: #181818, #7cafc2, #282828, #7cafc2, #181818
